@@ -141,3 +141,18 @@ print("\nham with 'free':"); [print("  ", m[:90]) for m in free_ham[:6]]
 print("spam with 'free':"); [print("  ", m[:90]) for m in free_spam[:4]]
 print("rules miss, model catches:"); [print("  ", m[:90]) for m in R["rules_miss_model_catches"][:4]]
 print("rules flag, model clears:"); [print("  ", m[:90]) for m in R["rules_flag_model_clears"][:4]]
+
+# ---- 4. the two cold-open messages, word by word ---------------------------
+def contributions(t):
+    ws = toks(t)
+    return {"prior": round(float(M["prior"][1] - M["prior"][0]), 2),
+            "words": [(w, round(float(M["logp"](w, 1) - M["logp"](w, 0)), 2)) for w in ws],
+            "total": round(float(nb_score(M, t)), 2)}
+
+FRIEND = next(m for m in free_ham if m.startswith("Can... I'm free"))
+SCAM = next(m for m in free_spam if m.startswith("Free entry in 2 a wkly comp"))
+R["friend"] = {"text": FRIEND, **contributions(FRIEND)}
+R["scam"] = {"text": SCAM, **contributions(SCAM)}
+R["ashwini"] = next(texts[i] for i in te if "ashwini" in texts[i].lower())
+json.dump(R, open(os.path.join(OUT, "results.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+print("\nfriend", R["friend"]); print("scam", R["scam"]["total"], R["scam"]["words"][:12])
