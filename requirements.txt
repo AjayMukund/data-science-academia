@@ -1,0 +1,2 @@
+numpy
+tiktoken      # only for the GPT-2 experiments (the tokenizer GPT-2 uses)

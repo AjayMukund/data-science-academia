@@ -1,0 +1,6 @@
+models/
+*/download/
+*/corpus/
+*/out/
+__pycache__/
+*.safetensors
