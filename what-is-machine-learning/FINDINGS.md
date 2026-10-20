@@ -20,8 +20,10 @@ Split: seeded shuffle, 4,459 training / **1,115 test (137 spam, 978 normal)**.
   prize 68 / 0, won 56 / 0, 150p 54 / 0, guaranteed 37 / 0; later 0 / 111,
   i'll 0 / 138, said 0 / 75. "free" leans spam (log-ratio +2.26) but is not decisive.
 - The minimal pair (both real test messages, both flagged by the 7 rules):
-  "Can... I'm free..." scores **-3.8** (normal);
-  "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005..." scores **+56.6** (spam).
+  "Free any day but i finish at 6 on mon n thurs..." scores **-12.7** (normal: "free"
+  +2.26, but nine of its twelve words lean normal - "i" -2.94, "but" -2.93, "finish" -2.58);
+  "URGENT! You have won a 1 week FREE membership in our £100,000 Prize Jackpot!..." scores
+  **+52.8** (spam: "claim" +5.56, "prize" +5.24, "won" +5.04).
 
 ## More examples, better (test accuracy by training-set size)
 10 -> 56.2% · 30 -> 74.5% · 100 -> 91.9% · 300 -> 95.9% · 1,000 -> 97.4% ·

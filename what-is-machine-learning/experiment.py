@@ -149,8 +149,8 @@ def contributions(t):
             "words": [(w, round(float(M["logp"](w, 1) - M["logp"](w, 0)), 2)) for w in ws],
             "total": round(float(nb_score(M, t)), 2)}
 
-FRIEND = next(m for m in free_ham if m.startswith("Can... I'm free"))
-SCAM = next(m for m in free_spam if m.startswith("Free entry in 2 a wkly comp"))
+FRIEND = next(m for m in free_ham if m.startswith("Free any day"))
+SCAM = next(m for m in free_spam if m.startswith("URGENT! You have won a 1 week FREE"))
 R["friend"] = {"text": FRIEND, **contributions(FRIEND)}
 R["scam"] = {"text": SCAM, **contributions(SCAM)}
 R["ashwini"] = next(texts[i] for i in te if "ashwini" in texts[i].lower())
