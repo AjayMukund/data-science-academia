@@ -26,6 +26,7 @@ python experiment.py
 | [`did-money-buy-a-lifeboat`](did-money-buy-a-lifeboat) | Did money buy a lifeboat? | Correlation vs causation: Titanic fare, class, sex, and fare per person |
 | [`why-is-a-list-so-slow`](why-is-a-list-so-slow) | Why is a list so slow? | 1,000 lookups in a million: a list walks, a dictionary jumps (timed) |
 | [`the-survey-that-only-reached-survivors`](the-survey-that-only-reached-survivors) | The survey that only reached survivors | Sampling bias: 342 survivors vs 1,000 random samples of 100 |
+| [`same-average-different-penguins`](same-average-different-penguins) | Same average, different penguins | Standard deviation: two groups both average 4.7 kg, one spread 2.8x wider |
 | [`etl-pipeline`](etl-pipeline) | The screen that lied | A real extract-transform-load pipeline into SQLite; rename one column and it loads 0 women without an error, until two checks stop it |
 | [`how-a-model-learns`](how-a-model-learns) | How a model learns | Train a tiny language model on *Alice in Wonderland* from random numbers, in about two minutes |
 | [`inside-the-transformer`](inside-the-transformer) | How ChatGPT works inside, step by step | Run GPT-2 in NumPy and watch "Paris" form, layer by layer |
