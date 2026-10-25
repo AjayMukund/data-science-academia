@@ -62,3 +62,16 @@ Logs in `out/` (`sweep.json`, `train.json`, `final_params.npz`).
   tokens (§2.2).
 - Llama 3: "pretrained on **over 15 trillion tokens**", 8B and 70B parameters
   (Meta Llama 3 model card, Hugging Face).
+
+## One knob, three models (`learning_rate.py`)
+Same model, book, seed and 3,000 steps; held-out error (random guessing = 4.28):
+
+| learning rate | error every 500 steps | final | writes ("Alice was ", seed 1) |
+|---|---|---|---|
+| 0.01 | 4.28 2.95 2.75 2.65 2.58 2.54 2.54 | **2.54** | `mode ouse the ea d mimetthe dood the sa loog se, the therer d the gher` |
+| 0.3 | 4.28 2.37 2.21 2.09 2.04 1.90 1.84 | **1.87** | `not anked not in a conems hamrelly ulle not of the thing to gay, then` |
+| 3 | 4.28 **10.06** 9.83 10.56 11.44 5.78 3.40 | **3.45** | `lunt so lat uuplad inEevlen sut deil hlatle s ou tor ha gut o tuoren t` |
+
+At 3 the error is more than twice random guessing from step 500 to 2,000; it
+recovers only after step 2,400, when the schedule cuts every run's step to a
+tenth, and still finishes worst.
