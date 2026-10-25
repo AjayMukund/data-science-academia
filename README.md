@@ -27,6 +27,7 @@ python experiment.py
 | [`why-is-a-list-so-slow`](why-is-a-list-so-slow) | Why is a list so slow? | 1,000 lookups in a million: a list walks, a dictionary jumps (timed) |
 | [`the-survey-that-only-reached-survivors`](the-survey-that-only-reached-survivors) | The survey that only reached survivors | Sampling bias: 342 survivors vs 1,000 random samples of 100 |
 | [`same-average-different-penguins`](same-average-different-penguins) | Same average, different penguins | Standard deviation: two groups both average 4.7 kg, one spread 2.8x wider |
+| [`king-minus-man-plus-woman`](king-minus-man-plus-woman) | King minus man plus woman equals... king? | The famous word-vector demo over all 400,000 GloVe words, with and without the hidden step |
 | [`etl-pipeline`](etl-pipeline) | The screen that lied | A real extract-transform-load pipeline into SQLite; rename one column and it loads 0 women without an error, until two checks stop it |
 | [`how-a-model-learns`](how-a-model-learns) | How a model learns | Train a tiny language model on *Alice in Wonderland* from random numbers, in about two minutes |
 | [`inside-the-transformer`](inside-the-transformer) | How ChatGPT works inside, step by step | Run GPT-2 in NumPy and watch "Paris" form, layer by layer |
@@ -36,7 +37,7 @@ Each folder has a `FINDINGS.md` with the exact numbers the video shows.
 
 **Data and models** are fetched from their sources and are not stored here:
 SMS Spam Collection (UCI, CC BY 4.0), *Alice's Adventures in Wonderland*
-(Project Gutenberg, public domain), Palmer Penguins (CC0), the Titanic
+(Project Gutenberg, public domain), Palmer Penguins (CC0), GloVe word vectors (PDDL), the Titanic
 passenger list (a public historical record), GPT-2 small (OpenAI, via Hugging Face,
 MIT licence). The code in this repository is MIT licensed.
 
