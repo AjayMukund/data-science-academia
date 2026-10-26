@@ -28,6 +28,7 @@ python experiment.py
 | [`the-survey-that-only-reached-survivors`](the-survey-that-only-reached-survivors) | The survey that only reached survivors | Sampling bias: 342 survivors vs 1,000 random samples of 100 |
 | [`same-average-different-penguins`](same-average-different-penguins) | Same average, different penguins | Standard deviation: two groups both average 4.7 kg, one spread 2.8x wider |
 | [`king-minus-man-plus-woman`](king-minus-man-plus-woman) | King minus man plus woman equals... king? | The famous word-vector demo over all 400,000 GloVe words, with and without the hidden step |
+| [`two-questions-decision-tree`](two-questions-decision-tree) | Two questions to name a penguin | A decision tree from scratch: how it picks its questions, and why depth 2 does almost all the work |
 | [`etl-pipeline`](etl-pipeline) | The screen that lied | A real extract-transform-load pipeline into SQLite; rename one column and it loads 0 women without an error, until two checks stop it |
 | [`how-a-model-learns`](how-a-model-learns) | How a model learns | Train a tiny language model on *Alice in Wonderland* from random numbers, in about two minutes |
 | [`inside-the-transformer`](inside-the-transformer) | How ChatGPT works inside, step by step | Run GPT-2 in NumPy and watch "Paris" form, layer by layer |
