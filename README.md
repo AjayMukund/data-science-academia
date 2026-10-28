@@ -36,6 +36,7 @@ python experiment.py
 | [`how-do-you-know-your-model-works`](how-do-you-know-your-model-works) | How do you know your model works? | Cross-validation: one penguin model scores 88-100% depending on the test split; 5-fold CV 96.8% |
 | [`does-red-mean-poisonous`](does-red-mean-poisonous) | Does red mean poisonous? | A decision tree on 8,124 field-guide mushrooms tries all 116 questions; smell beats colour, and a perfect test score turns out to be near-twins |
 | [`when-will-old-faithful-erupt`](when-will-old-faithful-erupt) | When will Old Faithful erupt? | Linear regression from scratch on 272 eruptions: squared misses, gradient descent, a test, and two clumps that two plain guesses fit better |
+| [`could-the-numbers-have-warned-them`](could-the-numbers-have-warned-them) | Could the numbers have warned them? | Logistic regression on the 23 shuttle flights before Challenger: no pattern in the damaged flights alone, 99.96% at 31°F with all of them |
 | [`how-a-model-learns`](how-a-model-learns) | How a model learns | Train a tiny language model on *Alice in Wonderland* from random numbers, in about two minutes |
 | [`inside-the-transformer`](inside-the-transformer) | How ChatGPT works inside, step by step | Run GPT-2 in NumPy and watch "Paris" form, layer by layer |
 | [`how-chatgpt-picks-its-next-word`](how-chatgpt-picks-its-next-word) | The cat sat on the… | GPT-2's real next-word list, greedy loops, temperature, top-k and top-p |
