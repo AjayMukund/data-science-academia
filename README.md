@@ -34,6 +34,8 @@ python experiment.py
 | [`do-new-yorkers-tip-13-or-22`](do-new-yorkers-tip-13-or-22) | Do New Yorkers tip 13% or 22%? | Python for data: 3.3 M NYC taxi trips in pandas; cash tips are never recorded, card riders tip 21.9% |
 | [`is-the-difference-real`](is-the-difference-real) | Is the difference real? | A/B testing with shuffles, no formulas: a real 64,000-customer email experiment; 27 of 100,000 shuffles match the gap |
 | [`how-do-you-know-your-model-works`](how-do-you-know-your-model-works) | How do you know your model works? | Cross-validation: one penguin model scores 88-100% depending on the test split; 5-fold CV 96.8% |
+| [`does-red-mean-poisonous`](does-red-mean-poisonous) | Does red mean poisonous? | A decision tree on 8,124 field-guide mushrooms tries all 116 questions; smell beats colour, and a perfect test score turns out to be near-twins |
+| [`when-will-old-faithful-erupt`](when-will-old-faithful-erupt) | When will Old Faithful erupt? | Linear regression from scratch on 272 eruptions: squared misses, gradient descent, a test, and two clumps that two plain guesses fit better |
 | [`how-a-model-learns`](how-a-model-learns) | How a model learns | Train a tiny language model on *Alice in Wonderland* from random numbers, in about two minutes |
 | [`inside-the-transformer`](inside-the-transformer) | How ChatGPT works inside, step by step | Run GPT-2 in NumPy and watch "Paris" form, layer by layer |
 | [`how-chatgpt-picks-its-next-word`](how-chatgpt-picks-its-next-word) | The cat sat on the… | GPT-2's real next-word list, greedy loops, temperature, top-k and top-p |
