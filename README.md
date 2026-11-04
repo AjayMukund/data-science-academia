@@ -29,6 +29,14 @@ python experiment.py
 | [`same-average-different-penguins`](same-average-different-penguins) | Same average, different penguins | Standard deviation: two groups both average 4.7 kg, one spread 2.8x wider |
 | [`king-minus-man-plus-woman`](king-minus-man-plus-woman) | King minus man plus woman equals... king? | The famous word-vector demo over all 400,000 GloVe words, with and without the hidden step |
 | [`two-questions-decision-tree`](two-questions-decision-tree) | Two questions to name a penguin | A decision tree from scratch: how it picks its questions, and why depth 2 does almost all the work |
+| [`why-accuracy-lies`](why-accuracy-lies) | Right 99.5% of the time, never warned once | Why accuracy lies: 26 years of California earthquakes; "always no" is 99.5% accurate and warns of none of 48 big-quake days |
+| [`a-mile-in-no-time`](a-mile-in-no-time) | A mile in no time by 2562? | Extrapolation: a straight line through 32 mile world records, the 1954 line that called 1999, and 27 years without a record |
+| [`two-numbers-481-sons`](two-numbers-481-sons) | Two numbers, 481 sons | The bell curve on Galton's 1880s family heights: two numbers predict 70 sons over six foot (83 counted), and a mixed group breaks it |
+| [`never-off-by-a-dollar`](never-off-by-a-dollar) | Never off by a dollar | Data leakage on 2,925 Ames house sales: a price-per-foot column gives $0 errors in testing and $21,200 on sale day |
+| [`where-do-you-draw-the-line`](where-do-you-draw-the-line) | Where do you draw the line? | Classification thresholds on 569 Wisconsin biopsies: 10 missed at 0.5, and 231 healthy flagged to catch every cancer |
+| [`nine-numbers-find-every-crater`](nine-numbers-find-every-crater) | Nine numbers find every crater | Convolution: one 3x3 edge grid slid over NASA's Moon, worked out on real pixels |
+| [`does-rain-empty-the-bike-racks`](does-rain-empty-the-bike-racks) | Does rain empty Seoul's bike racks? | Group-by in pandas on a year of Seoul's bikes: 766 vs 167 an hour, and a morning-evening flip in the rain |
+| [`seven-measurements-two-ideas`](seven-measurements-two-ideas) | Seven measurements, two ideas | PCA on 210 wheat grains: size holds 72% of the spread, shape 17%, and two numbers name 195 of 210 |
 | [`etl-pipeline`](etl-pipeline) | The screen that lied | A real extract-transform-load pipeline into SQLite; rename one column and it loads 0 women without an error, until two checks stop it |
 | [`the-page-that-lost-the-day`](the-page-that-lost-the-day) | The page that lost the day | Big data on one laptop: 151.6 M Wikipedia pageview lines, too big to hold, streamed in 2:22, map-reduce on 8 workers in 53 s |
 | [`do-new-yorkers-tip-13-or-22`](do-new-yorkers-tip-13-or-22) | Do New Yorkers tip 13% or 22%? | Python for data: 3.3 M NYC taxi trips in pandas; cash tips are never recorded, card riders tip 21.9% |
@@ -52,6 +60,9 @@ Each folder has a `FINDINGS.md` with the exact numbers the video shows.
 SMS Spam Collection (UCI, CC BY 4.0), *Alice's Adventures in Wonderland*
 (Project Gutenberg, public domain), Palmer Penguins (CC0), GloVe word vectors (PDDL), the Titanic
 passenger list (a public historical record), GPT-2 small (OpenAI, via Hugging Face,
-MIT licence). The code in this repository is MIT licensed.
+MIT licence), the USGS earthquake catalogue (public domain), the mile world-record progression
+(Wikipedia / World Athletics), Galton's family heights (public domain, via HistData), the Ames housing data
+(De Cock, Journal of Statistics Education), Breast Cancer Wisconsin, Seoul Bike Sharing Demand and
+Seeds (UCI, CC BY 4.0), and NASA Goddard's "Full Moon" (LRO, public domain). The code in this repository is MIT licensed.
 
 More folders arrive with each new video.

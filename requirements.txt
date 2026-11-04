@@ -1,2 +1,4 @@
 numpy
 tiktoken      # only for the GPT-2 experiments (the tokenizer GPT-2 uses)
+pillow        # only for nine-numbers-find-every-crater (reading the Moon image)
+pandas        # only for the pandas experiments (does-rain-empty-the-bike-racks)
